@@ -1,0 +1,495 @@
+nav{
+    background-color: black;
+    color: wheat;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+ul,li,a{
+    display: flex;
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+    gap: 30px;
+    margin-left: 30px;
+}
+ul{
+    padding-left: 300px;
+}
+.main img{
+    margin-top: 30px;
+    border-radius: 100%;
+    height: 400px;
+    width: 400px;
+    margin-left: 40px;
+    background-color: rgb(23, 166, 209);
+    
+}
+
+section{
+    display: flex;
+    background-color: color-mix(in srgb, rgb(0, 255, 55) 50%, rgb(34, 0, 128) 50%);
+    border-radius: 10px;
+}
+.maintext h1{
+    font-size: xx-large;
+    margin-left: 40px;
+    color: goldenrod;
+    margin-top: 100px;
+}
+.maintext p{
+    margin-left: 50px;
+    font-size: x-large;
+    width: 700px;
+
+}
+
+/* Add margin for spacing */
+.Education {
+    text-align: center;
+    background-color: dimgray;
+}
+.ed{
+  background-color:yellow;
+}
+
+#College {
+    margin: 20px auto; /* Center align and add spacing */
+    width: 600px;
+    height: 400px;
+    border: red;
+    color: navy;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    
+    border-radius: 20px;
+}
+#school{
+    margin: 20px auto; /* Center align and add spacing */
+    width: 600px;
+    height: 400px;
+    border: red;
+    color: navy;
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+#educated{
+    display: flex;
+}
+/* CSS */
+.school-image {
+    width: 300px; /* Adjust size */
+    height: 200px; /* Keeps the aspect ratio */
+    border-radius: 8px; /* Optional: adds rounded corners */
+    margin-top: 10px;
+  }
+  /* CSS */
+#skills {
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+  }
+  
+  #skill {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    background-color: dimgray;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill {
+    text-align: center; /* Center align images */
+  }
+  .skill h4{
+    font-size: x-large;
+    color: goldenrod;
+  }
+  .skill-image {
+    width: 100%; /* Make image responsive */
+    height: 90%; /* Keep aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+    transition: transform 0.3s; /* Add transition for hover effect */
+  }
+  
+  .skill-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  /* CSS */
+  #project{
+    background-color: dimgray;
+    font-size: xx-large;
+    text-align: center;
+  }
+#projects {
+    padding: 40px 20px;
+    background-color: #0ec7d4;
+  }
+  
+  #projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: dimgray;
+  }
+
+  #contact{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:dimgray;
+  }
+
+  #about{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: dimgray;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project {
+
+    border: 1px solid #1df1f1; /* Optional: border around each project */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow of content */
+    text-align: center; /* Center align content */
+    transition: transform 0.3s; /* Add transition for hover effect */
+    
+}
+  
+  .project-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Keep aspect ratio */
+  }
+  
+  .project:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  .project h3 {
+    margin: 10px 0 5px; /* Spacing for title */
+  }
+  
+  .project p {
+    margin: 0 10px 10px; /* Spacing for description */
+    font-size: 14px; /* Adjust font size */
+  }
+  
+  
+
+    
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Applying animations to elements */
+.main img {
+    animation: fadeIn 2s ease-in;
+}
+
+.maintext {
+    animation: slideUp 1.5s ease-out;
+}
+
+#College {
+    animation: fadeIn 2s ease-in;
+    animation-delay: 1s; /* Starts after a 1-second delay */
+}
+/* Define keyframes for different animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to Education section */
+
+
+#College {
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: 0.5s; /* Adds a delay for a staggered effect */
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.photo-section {
+  background: #007BFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.form-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-section h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.form-section p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .photo-section {
+      height: 200px;
+  }
+
+  .profile-photo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+
+.about-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.photo-section {
+  background-color: #007BFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.info-section {
+  padding: 30px;
+}
+
+.info-section h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.info-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.info-section button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.info-section button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .photo-sections {
+      height: 250px;
+  }
+
+  .about-photo {
+      height: 100%;
+      object-fit: cover;
+  }
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin: 10px;
+  flex: 1 1 200px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: color 0.3s;
+  display: inline;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+}
